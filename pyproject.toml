@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airmem-response-screening"
+version = "0.1.2"
+description = "Recurrent-peak response-side screening, model mass calibration and damping reproduction (V19.0)"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = {file = "LICENSE"}
+dependencies = [
+  "numpy==1.26.4", "scipy==1.13.1", "pandas==2.2.2",
+  "h5py==3.11.0", "matplotlib==3.8.4", "threadpoolctl==3.6.0"
+]
+
+[project.scripts]
+airmem-response = "airmem_response_screening.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+airmem_response_screening = ["config/*.json", "model_inputs/*"]

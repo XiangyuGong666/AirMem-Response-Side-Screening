@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+results/
+
+# Local monitoring inputs and release binaries
+*.mat
+*.exe
+*.zip
+Response-V19-*/

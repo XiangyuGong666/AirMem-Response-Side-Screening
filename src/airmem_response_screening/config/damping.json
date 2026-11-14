@@ -1,0 +1,33 @@
+{
+  "local_band_fraction": 0.3,
+  "bell_mac_threshold": 0.9,
+  "minimum_bell_lines": 5,
+  "zero_padding_factor": 8,
+  "fit": {
+    "start_time_s": 0.5,
+    "maximum_time_s": 20.0,
+    "minimum_points": 30,
+    "minimum_envelope_fraction": 0.08,
+    "r2_min": 0.9
+  },
+  "quality": {
+    "zeta_min": 0.001,
+    "zeta_max": 0.1
+  },
+  "rdt": {
+    "filter_order": 4,
+    "band_half_width_min_hz": 0.05,
+    "band_half_width_fraction": 0.05,
+    "edge_trim_periods": 2.0,
+    "trigger_sigma": 1.0,
+    "segment_periods": 8.0,
+    "minimum_segments": 10,
+    "fit_peak_count_min": 3,
+    "fit_peak_count_max": 5,
+    "r2_min": 0.9,
+    "zeta_min": 0.001,
+    "zeta_max": 0.1,
+    "beat_peak_spacing_cv_max": 0.2,
+    "beat_amplitude_increase_max": 0.3
+  }
+}

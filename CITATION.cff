@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite this software release and the monitoring dataset."
+title: "AirMem Response-Side Screening"
+type: software
+version: 0.1.2
+license: MIT
+repository-code: "https://github.com/XiangyuGong666/AirMem-Response-Side-Screening"
+authors:
+  - family-names: Gong
+    given-names: Xiangyu
+  - family-names: He
+    given-names: Yanli
+  - family-names: Li
+    given-names: Xiongyan
+references:
+  - type: data
+    title: "Processed 10 Hz field-monitoring dataset for wind screening of an air-supported membrane structure"
+    authors:
+      - family-names: Gong
+        given-names: Xiangyu
+      - family-names: He
+        given-names: Yanli
+      - family-names: Li
+        given-names: Xiongyan
+    doi: "10.5281/zenodo.23994733"

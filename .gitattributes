@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Preserve bytes covered by the original run hashes.
+/src/** -text whitespace=cr-at-eol,-blank-at-eof
+*.npz binary
+*.npy binary

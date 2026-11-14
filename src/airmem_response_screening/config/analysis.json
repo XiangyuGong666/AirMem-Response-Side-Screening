@@ -1,0 +1,36 @@
+{
+  "window_samples": 600,
+  "sampling_hz": 10,
+  "wind_threshold_mps": 3,
+  "peaks_per_window": 5,
+  "csd_halfwidth_hz": 0.02,
+  "max_relative_fe_error": 0.3,
+  "frequency_weight_sigma": 0.2,
+  "group_tolerance_hz": 0.03,
+  "analysis_min_frequency_hz": 0.1,
+  "analysis_max_frequency_hz": 5.0,
+  "grouping": "sort observed peak frequency; append next distinct frequency if within tolerance of current weighted median; otherwise start new group",
+  "repetition_min_windows": 2,
+  "three_metric_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "rank_score": "geometric mean of occurrence rate, dominant-FE fraction among valid events, and median pairwise shape MAC",
+  "selection": "rank all eligible groups by score descending; fundamental reference is top-ranked among groups dominated by the minimum FE mode index; ties: occurrence count descending, median frequency ascending",
+  "stage_order": [
+    "raw input and uncorrected FE",
+    "extract all peaks",
+    "uniform grouping",
+    "all-group metrics and ranking",
+    "select fundamental reference",
+    "added-mass inversion",
+    "damping"
+  ],
+  "prohibited_identification_inputs": [
+    "target fundamental frequency",
+    "preselected fundamental frequency band",
+    "added-mass corrected FE frequencies",
+    "archived group centers"
+  ]
+}
